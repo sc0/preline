@@ -318,8 +318,6 @@ class HSDropdown
 			!evt.metaKey &&
 			!target.element.menu.querySelector('input:focus')
 		) {
-			console.log('Key code:', evt.code);
-
 			switch (evt.code) {
 				case 'Escape':
 					if (!target.element.menu.querySelector('.hs-select.active')) {

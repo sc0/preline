@@ -240,8 +240,6 @@ window.HSStaticMethods = {
 		);
 	},
 	autoInit(collection: string | string[] = 'all') {
-		console.log(collection);
-
 		if (collection === 'all') {
 			COLLECTIONS.forEach(({ fn }) => {
 				fn?.autoInit();

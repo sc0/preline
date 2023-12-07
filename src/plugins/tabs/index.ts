@@ -154,8 +154,6 @@ class HSTabs extends HSBasePlugin<{}> implements ITabs {
 
 			evt.preventDefault();
 
-			console.log('Key code:', evt.code);
-
 			switch (evt.code) {
 				case isVertical === 'true' ? 'ArrowUp' : 'ArrowLeft':
 					this.onArrow();

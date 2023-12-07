@@ -89,8 +89,6 @@ class HSSearchByJson
 				}
 
 				this.buildItems();
-
-				console.log('result:', this.result);
 			}),
 		);
 	}

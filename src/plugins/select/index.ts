@@ -797,10 +797,6 @@ class HSSelect extends HSBasePlugin<ISelectOptions> implements ISelect {
 			SELECT_ACCESSIBILITY_KEY_SET.includes(evt.code) &&
 			!evt.metaKey
 		) {
-			console.log(target);
-
-			console.log('Key code:', evt.code);
-
 			switch (evt.code) {
 				case 'Escape':
 					evt.preventDefault();
