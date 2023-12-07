@@ -250,7 +250,7 @@ export declare class HSOverlay extends HSBasePlugin<{}> implements IOverlay {
 	private focusElement;
 	open(): false | Promise<void>;
 	close(): Promise<unknown>;
-	static getInstance(target: HTMLElement, isInstance?: boolean): HTMLElement | ICollectionItem<HSOverlay>;
+	static getInstance(target: HTMLElement): HSOverlay;
 	static autoInit(): void;
 	static open(target: HTMLElement): void;
 	static close(target: HTMLElement): void;

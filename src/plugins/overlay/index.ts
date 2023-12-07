@@ -261,7 +261,7 @@ class HSOverlay extends HSBasePlugin<{}> implements IOverlay {
 	}
 
 	// Static methods
-	static getInstance(target: HTMLElement, isInstance?: boolean) {
+	static getInstance(target: HTMLElement) {
 		const elInCollection = window.$hsOverlayCollection.find(
 			(el) =>
 				el.element.el ===
@@ -274,11 +274,7 @@ class HSOverlay extends HSBasePlugin<{}> implements IOverlay {
 						: target),
 		);
 
-		return elInCollection
-			? isInstance
-				? elInCollection
-				: elInCollection.element.el
-			: null;
+		return elInCollection ? elInCollection.element : null;
 	}
 
 	static autoInit() {
