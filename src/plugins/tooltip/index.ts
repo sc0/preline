@@ -27,7 +27,7 @@ class HSTooltip extends HSBasePlugin<{}> implements ITooltip {
 		super(el, options, events);
 
 		if (this.el) {
-			this.toggle = this.el.querySelector('.hs-tooltip-toggle') || this.el;
+			this.toggle = this.el.querySelector('.hs-tooltip-toggle');
 			this.content = this.el.querySelector('.hs-tooltip-content');
 			this.eventMode = this.getClassProperty(this.el, '--trigger') || 'hover';
 			this.preventPopper = this.getClassProperty(
