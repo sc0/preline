@@ -229,7 +229,7 @@ class HSOverlay extends HSBasePlugin<{}> implements IOverlay {
 			this.overlay.classList.add('open');
 
 			this.fireEvent('open', this.el);
-			this.dispatch('open.hs.overlay', this.el, this.el);
+			this.dispatch('open.hs.overlay', this.overlay, this.el);
 
 			if (this.hasAutofocus === 'true') this.focusElement();
 		}, 50);
